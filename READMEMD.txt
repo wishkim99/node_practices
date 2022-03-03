@@ -20,7 +20,7 @@
     2) 지역( project local) 설치: 특정 프로젝트에 종속적인 도구나 라이브러리
     3) 패키지 설치
         $[project-ex01] npm i ejs (local, general, dependency)
-        $[project-ex01] npm i -D nodemon (local, dev. dependency) -> -D를 안붙이면 서버에도 설치됨
+        $[project-ex01] npm i -D nodemon (local, dev. dependency) -> -D를 안붙이면 서버에도 설치됨, 개발 의존성: -D
         $[project-ex01] npm i -g gulp(global)
         $[project-ex01] npx gulp --version(설치 확인)
 
@@ -36,13 +36,19 @@
      $[project-ex02] npm init -y
 
 
-5. Module(프로그래밍언어에서 매우 중요)
+5. Module(프로그래밍언어에서 매우 중요)+
     1) 코어 모듈(fs, os, ... node에서 제공해 주는 모듈)
     2) 파일 모듈: 파일 경로로 불러 와서 모듈안의 함수, 객체를 사용한다.
     3) npm 모듈: npm를 통해서 node_module에 설치하고 사용하는 모듈안의  
         -원격 배포
         -로컬 배포
 
-#### 6. npmjs.com(npm registry)에 내 패키지 배포
-#### 7. helloweb-ex01(매바닥)
-### 8. helloweb-ex02(express)
+6. npmjs.com의 npm registry에 패키지 배포(원격 배포)
+
+
+7. helloweb-ex01: 웹애플리케이션 만들어보기(맨바닥)
+    1) app01: http: core module 기반
+    2) app02: http, fs(file system): core module 기반-> fs가 붙어있으면 정적자원 시스템을 사용해보라
+    3) app03: connect, serve-static: npm package 기반
+    4) app04: connect, serve-static, connect-route: npm package 기반
+8. helloweb-ex02: 웹애플리케이션 만들어보기(exporess 프레임워크 o)
